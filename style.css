@@ -1,0 +1,490 @@
+header {
+  background-color: #00b6b6;
+  color: white;
+  padding: 1rem 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  max-width: 125px;
+  height: auto;
+}
+
+.tagline {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #4caf50, #e0e0e0);
+}
+
+header {
+  background-color: #38a2f4;
+  color: rgb(208, 5, 5);
+  padding: 1rem 0;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 650;
+}
+
+#hero {
+  background-image: url("interior.jpg");
+  background-size: cover;
+  background-position: center;
+  color: rgb(2, 2, 2);
+  text-align: center;
+  padding: 5rem 1rem;
+  margin-bottom: 2rem;
+}
+
+#hero .cta-button {
+  background-color: #333;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+#about,
+#products,
+#reviews,
+#contact #about {
+  padding: 7rem;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 1rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#about p {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 800px;
+}
+#about ul {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#products .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#products h2 {
+  font-size: xx-large;
+}
+
+.product-item {
+  flex: 1 1 calc(33% - 2rem);
+  margin: 1rem;
+  background-color: whitesmoke;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+}
+
+#reviews {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+#reviews h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.review-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.review-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.review-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    flex: 1 1 calc(100% - 2rem);
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+}
+#contact {
+  position: relative;
+  background-color: #f0f0f000;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #333;
+}
+
+.contact-box {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 5rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  transform: rotate(-3deg);
+}
+
+.contact-box::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  background-color: #3d9f2c;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.contact-box h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-box p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+.icon {
+  width: 60px; /* Sesuaikan ukuran ikon */
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.5); /* Efek pembesaran saat hover */
+}
+
+#hero {
+  position: relative;
+  padding: 3rem 1rem;
+  text-align: center;
+  background: linear-gradient(90deg, #4caf50, #e0e0e0);
+}
+
+.hero-box {
+  display: inline-block;
+  padding: 2rem 3rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-box::before,
+.hero-box::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #3d9f2c;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.hero-box::before {
+  top: -40px;
+  right: -40px;
+}
+
+.hero-box::after {
+  bottom: -40px;
+  left: -40px;
+}
+
+.hero-box h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.hero-box p {
+  font-size: 1.2rem;
+  color: #777;
+}
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px; /* Jarak dari bawah layar */
+  left: 50%; /* Posisikan tombol di tengah secara horizontal */
+  transform: translateX(-50%); /* Centangkan tombol */
+  z-index: 99;
+  font-size: 24px; /* Ukuran teks */
+  width: 60px; /* Lebar tombol */
+  height: 60px; /* Tinggi tombol */
+  background-color: #ffffff; /* Warna latar belakang tombol */
+  color: rgb(0, 0, 0); /* Warna teks */
+  border: none;
+  border-radius: 50%; /* Membuat tombol berbentuk lingkaran */
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Bayangan tombol */
+  transition: opacity 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  opacity: 0; /* Mulai dalam keadaan tersembunyi */
+  visibility: hidden;
+}
+
+#scrollToTopBtn.show {
+  opacity: 1; /* Menampilkan tombol */
+  visibility: visible;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #45a049; /* Warna latar belakang saat hover */
+  transform: translateX(-50%) scale(1.1); /* Perbesar tombol saat hover */
+}
+/* MAPS CSS */
+.contact-map-container {
+  display: flex;
+  flex-wrap: wrap; /* Agar elemen dapat membungkus pada layar kecil */
+  gap: 20px; /* Jarak antara elemen */
+  margin: 20px; /* Jarak dari tepi kontainer */
+}
+
+.contact-info {
+  flex: 1; /* Memungkinkan bagian ini mengambil ruang yang fleksibel */
+  max-width: 400px; /* Ukuran maksimal untuk informasi kontak */
+  padding: 10px; /* Jarak di dalam kontainer */
+  border: 1px solid #ddd; /* Border ringan */
+  border-radius: 10px; /* Sudut membulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+  background-color: #f9f9f9; /* Latar belakang terang */
+}
+
+.map-container {
+  flex: 1; /* Memungkinkan bagian ini mengambil ruang yang fleksibel */
+  max-width: 400px; /* Ukuran maksimal untuk peta */
+  border-radius: 10px; /* Sudut membulat untuk kontainer peta */
+  overflow: hidden; /* Menyembunyikan bagian peta yang meluber */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+}
+
+.map-header {
+  display: flex;
+  align-items: center;
+  padding: 10px; /* Jarak di dalam kontainer header peta */
+  background-color: #f0f0f0; /* Latar belakang header peta */
+  border-bottom: 1px solid #ddd; /* Garis batas bawah header */
+}
+
+.map-icon {
+  width: 40px; /* Ukuran ikon */
+  height: 40px; /* Ukuran ikon */
+  margin-right: 20px; /* Jarak antara ikon dan teks */
+}
+
+.map-text {
+  font-size: 16px; /* Ukuran font untuk teks */
+  font-weight: bold; /* Tebal font untuk teks */
+  text-align: center;
+}
+
+.map-container iframe {
+  width: 100%; /* Mengisi lebar kontainer */
+  height: 200px; /* Tinggi peta */
+  border: none; /* Menghapus border default */
+}
+
+.promo-section {
+  display: flex;
+  justify-content: space-around; /* Menyebar box secara horizontal */
+  margin: 20px; /* Jarak dari tepi kontainer */
+}
+
+.promo-box,
+.hiasan-box {
+  background-color: #f0f8ff; /* Latar belakang ringan */
+  border: 2px solid #e0e0e0; /* Border lembut */
+  border-radius: 12px; /* Sudut membulat */
+  padding: 15px; /* Jarak di dalam box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+  max-width: 500px; /* Lebar maksimal box */
+  text-align: center; /* Pusatkan teks */
+  position: relative; /* Posisi relatif untuk elemen tambahan */
+  animation: swing 3s ease-in-out infinite; /* Tambahkan animasi bergoyang */
+}
+
+.promo-box::before,
+.hiasan-box::before {
+  content: ""; /* Untuk elemen hiasan tambahan */
+  position: absolute;
+  top: -10px; /* Jarak dari tepi atas box */
+  left: 50%; /* Pusatkan secara horizontal */
+  transform: translateX(-50%); /* Pusatkan elemen */
+  width: 20px; /* Lebar elemen */
+  height: 20px; /* Tinggi elemen */
+  background-color: #ff6347; /* Warna elemen */
+  border-radius: 50%; /* Membuat elemen bulat */
+}
+
+.promo-box::before {
+  background-color: #ff6347; /* Warna hiasan untuk promo */
+}
+
+.hiasan-box::before {
+  background-color: #4682b4; /* Warna hiasan untuk hiasan */
+}
+
+.promo-box h3,
+.hiasan-box h3 {
+  margin: 0;
+  font-size: 18px; /* Ukuran font judul */
+  color: #333; /* Warna teks */
+}
+
+.promo-box p,
+.hiasan-box p {
+  margin: 10px 0 0;
+  font-size: 14px; /* Ukuran font paragraf */
+  color: #555; /* Warna teks */
+}
+
+/* Animasi bergoyang seperti papan kayu */
+@keyframes swing {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
